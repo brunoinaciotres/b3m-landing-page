@@ -249,6 +249,37 @@ section.contact {
   margin-bottom: 1rem;
 }
 
+#contact-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid transparent;
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.hide {
+  opacity:0
+}
+
+.check-icon {
+  width:30px;
+  height: 30px;
+  
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width:800px){
   section.contact {
     width:600px;

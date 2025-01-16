@@ -16,8 +16,8 @@ export default function Home() {
     const name = document.querySelector("#name").value
     const email = document.querySelector("#email").value
     const msg = document.querySelector("#msg").value
-    console.log(name,email,msg)
-
+   
+    startLoader()
     await fetch("/api", {
       method: "POST",
       headers: {
@@ -28,7 +28,28 @@ export default function Home() {
     }). then( data => data.json())
     .then (response => {
       console.log(response)
+      finishLoader()
     })
+    .catch(error => {
+      console.log("ERRO NO FETCH -->", error)
+    })
+  }
+
+  function startLoader(){
+    const btn = document.querySelector("#contact-form-btn")
+    btn.innerHTML = `Estamos enviando seu email! <div class="spinner"></div>`
+  }
+
+  function finishLoader(){
+    const btn = document.querySelector("#contact-form-btn")
+    const spinner = document.querySelector(".spinner")
+    spinner.classList.toggle("hide")
+    btn.innerHTML = "Mensagem Enviada"
+    const checkIcon = document.createElement("img")
+    checkIcon.src = "/images/check-all.svg"
+    checkIcon.classList.add("check-icon")
+    btn.append(checkIcon)
+
   }
 
   return (
@@ -71,7 +92,10 @@ export default function Home() {
             <input type="email" id="email" />
             <label htmlFor="msg">Mensagem</label>
             <textarea id="msg"></textarea>
-            <button onClick={sendEmail} className="filled-btn">Enviar Mensagem</button>
+            <button id="contact-form-btn" onClick={sendEmail} className="filled-btn">
+              Enviar Mensagem
+              {/* <div className="spinner hide"></div> */}
+            </button>
           </form>
         </section>
       </main>

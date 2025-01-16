@@ -10,7 +10,26 @@ import { useEffect } from "react";
 
 
 export default function Home() {
+  
+  async function sendEmail(e) {
+    e.preventDefault()
+    const name = document.querySelector("#name").value
+    const email = document.querySelector("#email").value
+    const msg = document.querySelector("#msg").value
+    console.log(name,email,msg)
 
+    await fetch("/api", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      mode: 'cors',
+      body: JSON.stringify({name,email,msg})
+    }). then( data => data.json())
+    .then (response => {
+      console.log(response)
+    })
+  }
 
   return (
     <>
@@ -52,7 +71,7 @@ export default function Home() {
             <input type="email" id="email" />
             <label htmlFor="msg">Mensagem</label>
             <textarea id="msg"></textarea>
-            <button className="filled-btn">Enviar Mensagem</button>
+            <button onClick={sendEmail} className="filled-btn">Enviar Mensagem</button>
           </form>
         </section>
       </main>

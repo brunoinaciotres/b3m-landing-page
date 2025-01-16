@@ -1,0 +1,47 @@
+header {
+    background-color: #fff;
+    position: sticky;
+    top:0;
+    z-index:10;
+}
+
+.logo-header {
+    width: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.nav-list-item {
+    list-style: none;
+    cursor: pointer;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list-item:hover {
+    font-weight: bold;
+}
+
+.light-effect {
+    width: 100%;
+    height: 5px;
+    background: var(--primary-gradient);
+    mask-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, .7) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, .7) 0%,
+            rgba(0, 0, 0, 0) 100%);
+
+}

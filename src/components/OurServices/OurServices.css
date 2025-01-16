@@ -106,4 +106,12 @@ section.our-services{
   .our-services .our-services-list {
     width:400px;
   }
+
+  .our-services .icon-text-container {
+    flex-direction: column;
+  }
+
+  .our-services .item-text {
+    text-align: center;
+  }
 }

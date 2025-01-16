@@ -60,7 +60,9 @@
 @media screen and (max-width: 560px) {
     .results-text-show,  .digital-presence-text-show{
         font-size:2rem;
+        text-align: center;
     }
 
 
 }
+

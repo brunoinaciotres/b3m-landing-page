@@ -76,8 +76,8 @@ body {
 }
 
 .filled-btn {
-  padding: .3rem 1.2rem;
-  font-size: .8rem;
+  padding: .5rem 1.2rem;
+  font-size: 1rem;
   border-radius: 3px;
   color: #fff;
   background: var(--primary-blue);
@@ -186,4 +186,101 @@ section.about-us {
 
   
 
+}
+
+
+/* SECTION CONTACT */
+
+section.contact {
+  width:700px;
+  margin: 0 auto;
+
+}
+
+.contact .section-title {
+  margin-bottom: 3rem;
+}
+.contact .wpp-container {
+  width:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.contact .wpp-container img {
+  width: 30px;
+  height:30px;
+}
+
+.contact form {
+  width:auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding:2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top:2rem;
+
+}
+
+.contact form .form-title {
+  margin-bottom:2rem;
+}
+
+.contact form label {
+
+  margin-bottom:.5rem;
+}
+
+.contact form input {
+  border-radius:4px;
+  border:1px solid #585858;
+  padding: .5rem 1rem;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.contact form textarea {
+  border-radius:4px;
+  border:1px solid #585858;
+  padding: .5rem 1rem;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width:800px){
+  section.contact {
+    width:600px;
+  }
+}
+
+@media screen and (max-width:640px){
+  section.contact {
+    width:500px;
+  }
+
+  .contact .section-title {
+    text-align: center;
+  } 
+
+  .text-contact {
+    text-align: center;
+    display: block;
+  }
+} 
+
+@media screen and (max-width:550px){
+  section.contact {
+    width:auto;
+    padding:0 1rem;
+  }
+
+  .contact .wpp-container {
+    flex-direction: column;
+  }
+
+  .contact .wpp-container a {
+    text-align: center;
+  }
 }

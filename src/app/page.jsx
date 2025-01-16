@@ -32,6 +32,29 @@ export default function Home() {
             <img src="/images/laptop.png" alt="" className="laptop-img" />
           </div>
         </section>
+
+        <section className="contact">
+          <div className="section-title">
+            Entre em contato
+          </div>
+          <div className="wpp-container">
+            <img src="/images/whatsapp.png" alt="ícone do Whatsapp" />
+            <span>Whatsapp</span>
+            <span className="wpp-number fw-bold">(32) 99160-7447</span>
+            <a href="#">Clique para enviar uma mensagem</a>
+          </div>
+          <span className="fs-5 text-contact">Ou nos envie um email</span>
+          <form action="#" className="send-email">
+            <span className="fw-bold form-title">Enviar Email</span>
+            <label htmlFor="name">Nome</label>
+            <input type="text" id="name" />
+            <label htmlFor="email">Seu Email</label>
+            <input type="email" id="email" />
+            <label htmlFor="msg">Mensagem</label>
+            <textarea id="msg"></textarea>
+            <button className="filled-btn">Enviar Mensagem</button>
+          </form>
+        </section>
       </main>
     </>
 

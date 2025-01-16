@@ -43,21 +43,21 @@ export default function OurServices(){
         <div className="d-flex ">
           <ul className="our-services-list">
             <li className="our-services-item d-flex justify-content-between">
-              <div className="d-flex gap-1">
+              <div className="icon-text-container d-flex gap-1">
                 <span className=" d-flex item-icon-container align-items-center justify-content-center "><img className="item-icon" src="/images/Instagram.png" alt="Icone do Instagram" /></span>
                 <p className="item-text">Gerenciamento da sua rede social com produção de conteúdos estratégica.</p>
               </div>
               <button className="item-btn outlined-blue-btn">Tenho Interesse</button>
             </li>
             <li className="our-services-item d-flex justify-content-between">
-              <div className="d-flex gap-1">
+              <div className="icon-text-container d-flex gap-1">
                 <span className=" d-flex item-icon-container align-items-center justify-content-center "><img className="item-icon" src="/images/Gallery.png" alt="Icone do Instagram" /></span>
                 <p className="item-text">Produção de artes gráficas para seu negócio. Cartões de visita, cardápios, e mais.</p>
               </div>
               <button className="item-btn outlined-blue-btn">Tenho Interesse</button>
             </li>
             <li className="our-services-item d-flex justify-content-between">
-              <div className="d-flex gap-1">
+              <div className="icon-text-container d-flex gap-1">
                 <span className=" d-flex item-icon-container align-items-center justify-content-center "><img className="item-icon" src="/images/Website.png" alt="Icone do Instagram" /></span>
                 <p className="item-text">Criação e manutenção do seu site conforme suas necessidades.</p>
 

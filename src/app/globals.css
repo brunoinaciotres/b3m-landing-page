@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+
 }
 
 :root {
@@ -172,6 +173,10 @@ section.about-us {
   section.about-us {
     width: auto;
   }
+
+  .about-us .img-container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -179,8 +184,6 @@ section.about-us {
     padding:0 2rem;
   }
 
-  .about-us .img-container {
-    display: none;
-  }
+  
 
 }

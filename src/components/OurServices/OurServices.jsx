@@ -14,7 +14,7 @@ export default function OurServices(){
                 setTimeout(()=> {
                     entry.target.classList.add("show-service-item")
 
-                }, 500)
+                }, 300)
     
                 observerServiceItems.unobserve(entry.target); // Evita que a animação repita
               }

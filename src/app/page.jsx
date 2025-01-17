@@ -81,7 +81,7 @@ export default function Home() {
             <img src="/images/whatsapp.png" alt="ícone do Whatsapp" />
             <span>Whatsapp</span>
             <span className="wpp-number fw-bold">(32) 99160-7447</span>
-            <a href="#">Clique para enviar uma mensagem</a>
+            <a href="https://wa.me/5532991463499/?text=Olá, gostaria de mais informações">Clique para enviar uma mensagem</a>
           </div>
           <span className="fs-5 text-contact">Ou nos envie um email</span>
           <form action="#" className="send-email">

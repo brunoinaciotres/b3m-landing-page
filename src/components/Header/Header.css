@@ -73,6 +73,7 @@ nav {
     right:-150px;
     transition: all ease .3s;
     z-index:13;
+    display: none;
 }
 
 .aside-menu svg {
@@ -122,6 +123,6 @@ nav {
 
     .aside-menu {
         top:0;
-        
+        display: unset;
     }
 }

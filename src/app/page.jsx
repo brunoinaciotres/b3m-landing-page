@@ -78,7 +78,7 @@ export default function Home() {
             Entre em contato
           </div>
           <div className="wpp-container">
-            <img src="/images/whatsapp.png" alt="ícone do Whatsapp" />
+            <img src="/images/WhatsApp.png" alt="ícone do Whatsapp" />
             <span>Whatsapp</span>
             <a href="https://wa.me/5532991463499/?text=Olá, vim pelo site e gostaria de mais informações.">Clique para enviar uma mensagem</a>
           </div>

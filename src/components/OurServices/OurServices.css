@@ -105,7 +105,7 @@ section.our-services{
 
 @media screen and (max-width:500px) {
   .our-services .our-services-list {
-    width:auto;
+    width:auto  ;
   }
 
   .our-services .icon-text-container {

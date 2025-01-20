@@ -20,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  padding-bottom: 10rem;
 }
 
 .primary-color-gradient {
@@ -193,7 +192,7 @@ section.about-us {
 
 section.contact {
   width:700px;
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
   scroll-margin-top:5rem;
 }
 
@@ -315,3 +314,73 @@ section.contact {
     text-align: center;
   }
 }
+
+footer {
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer .title {
+  margin-bottom:1rem;
+}
+footer ul {
+  display: flex;
+  margin:0 !important;
+  padding: 0 !important;
+  gap:2rem;
+  flex-wrap: wrap;
+}
+
+footer li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+footer li:hover {
+  color: var(--primary-blue);
+  cursor:pointer;
+}
+
+
+footer li .icon-footer{
+  width:20px;
+  height:20px;
+  margin-right:5px;
+}
+
+footer p {
+  font-size:.8rem;
+  margin-top:1rem;
+}
+
+footer .logo-footer {
+  width:100px;
+}
+
+footer .footer-container {
+  width:700px;
+}
+
+footer a {
+  color:unset;
+  text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+  footer .footer-container {
+    width:600px;
+  }
+
+  footer ul {
+    gap:1rem;
+  }
+}
+
+@media screen and (max-width:550px) {
+  footer .logo-footer {
+    display: none;
+  }
+} 

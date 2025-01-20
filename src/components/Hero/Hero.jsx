@@ -34,20 +34,20 @@ export default function Hero() {
             <div className="hero-card-group d-flex justify-content-center">
                 <div className="hero-card">
                   <img className="hero-card-icon" src="/images/Instagram.png" alt="Icone de um WebSite" />
-                  <p className="hero-card-text">Gerenciamos sua rede social</p>
-                  <button className="outlined-blue-btn">Saber Mais</button>
+                  <p className="hero-card-text">Gerencie sua rede social</p>
+                  <button className="outlined-blue-btn d-none">Saber Mais</button>
                 </div>
               
                 <div className="hero-card">
                   <img className="hero-card-icon" src="/images/Gallery.png" alt="Icone de um WebSite" />
-                  <p className="hero-card-text">Produzimos artes visuais digitais para seu negócio</p>
-                  <button className="outlined-blue-btn">Saber Mais</button>
+                  <p className="hero-card-text">Produza artes visuais digitais para seu negócio</p>
+                  <button className="outlined-blue-btn d-none">Saber Mais</button>
                 </div>
               
                 <div className="hero-card">
                   <img className="hero-card-icon" src="/images/Website.png" alt="Icone de um WebSite" />
-                  <p className="hero-card-text">Criamos seu site conforme suas necessidades</p>
-                  <button className="outlined-blue-btn">Saber Mais</button>
+                  <p className="hero-card-text">Crie seu site conforme suas necessidades</p>
+                  <button className="outlined-blue-btn  d-none">Saber Mais</button>
                 </div>
              
             </div>

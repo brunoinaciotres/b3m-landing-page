@@ -48,14 +48,15 @@ export default function OurServices() {
               <span className=" d-flex item-icon-container align-items-center justify-content-center "><img className="item-icon" src="/images/Instagram.png" alt="Icone do Instagram" /></span>
               <p className="item-text">Gerenciamento da sua rede social com produção de conteúdos estratégica.</p>
             </div>
-            <button className="item-btn outlined-blue-btn">Tenho Interesse</button>
+            <a href="https://wa.me/5532991463499/?text=Olá, vim pelo site e gostaria de mais informações sobre gerenciamento da rede social do meu negócio." className="item-btn outlined-blue-btn">Tenho Interesse</a>
+        
           </li>
           <li className="our-services-item d-flex justify-content-between">
             <div className="icon-text-container d-flex gap-1">
               <span className=" d-flex item-icon-container align-items-center justify-content-center "><img className="item-icon" src="/images/Gallery.png" alt="Icone do Instagram" /></span>
               <p className="item-text">Produção de artes gráficas para seu negócio. Cartões de visita, cardápios, e mais.</p>
             </div>
-            <button className="item-btn outlined-blue-btn">Tenho Interesse</button>
+            <a className="item-btn outlined-blue-btn" href="https://wa.me/5532991463499/?text=Olá, vim pelo site e gostaria de mais informações sobre produção de artes gráficas para meu negócio.">Tenho Interesse</a>
           </li>
           <li className="our-services-item d-flex justify-content-between">
             <div className="icon-text-container d-flex gap-1">
@@ -63,7 +64,8 @@ export default function OurServices() {
               <p className="item-text">Criação e manutenção do seu site conforme suas necessidades.</p>
 
             </div>
-            <button className="item-btn outlined-blue-btn">Tenho Interesse</button>
+            <a className="item-btn outlined-blue-btn" href="https://wa.me/5532991463499/?text=Olá, vim pelo site e gostaria de mais informações sobre a criação de site para meu negócio.">Tenho Interesse</a>
+            
           </li>
         </ul>
       </div>

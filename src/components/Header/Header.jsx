@@ -7,9 +7,9 @@ export default function Header() {
                     <img className="logo-header" src="/images/logo-colorida.png" alt="B3M Logo" />
                     <nav className="d-flex align-items-center ">
                         <ul className="nav-list d-flex align-items-center justify-content-center">
-                            <li className="nav-list-item">Sobre Nós</li>
-                            <li className="nav-list-item">Serviços</li>
-                            <li className="nav-list-item">Contato</li>
+                            <li className="nav-list-item"><a href="#about-us">Sobre Nós</a></li>
+                            <li className="nav-list-item"> <a href="#services">Serviços</a></li>
+                            <li className="nav-list-item"><a href="#contact">Contato</a></li>
                         </ul>
                     </nav>
                 </div>

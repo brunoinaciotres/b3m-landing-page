@@ -61,7 +61,7 @@ export default function Home() {
         <Text1 />
         <OurServices />
         <Partners />
-        <section className="about-us">
+        <section id="about-us" className="about-us">
           <div className="content-container gap-4">
             <h3 className="section-title">Sobre Nós</h3>
             <div className="paragraph-container">
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="contact">
+        <section id="contact" className="contact">
           <div className="section-title">
             Entre em contato
           </div>
@@ -94,7 +94,6 @@ export default function Home() {
             <textarea id="msg"></textarea>
             <button id="contact-form-btn" onClick={sendEmail} className="filled-btn">
               Enviar Mensagem
-              {/* <div className="spinner hide"></div> */}
             </button>
           </form>
         </section>

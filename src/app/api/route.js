@@ -24,9 +24,9 @@ export async function POST(req) {
         console.log(data)
         return NextResponse.json({ data })
     })
-        .catch(error => {
-            return NextResponse.json({ error })
-        })
+    .catch(error => {
+        return NextResponse.json({ error })
+    })
 
 }
 

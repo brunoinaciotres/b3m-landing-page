@@ -1,8 +1,8 @@
 header {
     background-color: #fff;
     position: sticky;
-    top:0;
-    z-index:10;
+    top: 0;
+    z-index: 10;
 }
 
 .logo-header {
@@ -27,12 +27,12 @@ nav {
     width: 100px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .nav-list-item a {
     text-decoration: none;
-    color:unset;
+    color: unset;
 }
 
 .nav-list-item:hover {
@@ -50,4 +50,78 @@ nav {
             rgba(0, 0, 0, .7) 0%,
             rgba(0, 0, 0, 0) 100%);
 
+}
+
+.hamb-menu {
+    display: none;
+
+}
+
+.hamb-vector {
+    width: 30px;
+    height: 2px;
+    background: #000;
+    ;
+    border-radius: 2px;
+}
+
+.aside-menu {
+    width:150px;
+    background-color: #fff;
+    height:100vh;
+    position: absolute;
+    right:-150px;
+    transition: all ease .3s;
+    z-index:13;
+}
+
+.aside-menu svg {
+    position: absolute;
+    left:2rem;
+    top:2rem;
+    width:20px;
+    height: 20px;
+}
+
+.nav-list-aside-menu {
+    height:100%;
+    gap:1.5rem;
+}
+
+.nav-list-aside-menu-item {
+    list-style: none    ;
+}
+
+.nav-list-aside-menu-item a {
+    color:#000;
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 10;
+    background: #00000050;
+}
+
+
+@media screen and (max-width:450px) {
+    .nav-list {
+        display: none !important;
+    }
+
+    .hamb-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+    }
+
+    .aside-menu {
+        top:0;
+        
+    }
 }

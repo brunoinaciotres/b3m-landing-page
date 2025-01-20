@@ -83,7 +83,7 @@ export default function Home() {
             <span className="wpp-number fw-bold">(32) 99160-7447</span>
             <a href="https://wa.me/5532991463499/?text=Olá, gostaria de mais informações">Clique para enviar uma mensagem</a>
           </div>
-          <span className="fs-5 text-contact">Ou nos envie um email</span>
+          {/* <span className="fs-5 text-contact">Ou nos envie um email</span>
           <form action="#" className="send-email">
             <span className="fw-bold form-title">Enviar Email</span>
             <label htmlFor="name">Nome</label>
@@ -95,7 +95,7 @@ export default function Home() {
             <button id="contact-form-btn" onClick={sendEmail} className="filled-btn">
               Enviar Mensagem
             </button>
-          </form>
+          </form> */}
         </section>
       </main>
     </>

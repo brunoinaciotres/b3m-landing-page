@@ -5,6 +5,7 @@ export default function Header() {
         const overlay = document.querySelector(".overlay")
         overlay.classList.toggle("d-none")
         menu.style.right = "0"
+        menu.classList.toggle("d-none")
     }
 
     function closeMenu(){
@@ -12,6 +13,7 @@ export default function Header() {
         const overlay = document.querySelector(".overlay")
         overlay.classList.toggle("d-none")
         menu.style.right = "-150px"
+        menu.classList.toggle("d-none")
     }
 
     
@@ -26,7 +28,7 @@ export default function Header() {
                             <div className="hamb-vector"></div>
                             <div className="hamb-vector"></div>
                         </div>
-                        <div className="aside-menu">
+                        <div className="aside-menu d-none">
                             <svg
                                 onClick={closeMenu}
                                 xmlns="http://www.w3.org/2000/svg"

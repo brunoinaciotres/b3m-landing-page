@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Analytics } from "@vercel/analytics/react"
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,18 +21,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ 
   return (
     <html lang="pt-BR">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16829974171">
-        </script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
 
-          gtag('config', 'AW-16829974171');
-        </script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Analytics } from "@vercel/analytics/react"
-import Head from 'next/head';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <Head>
+      <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16829974171">
         </script>
         <script>
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 
           gtag('config', 'AW-16829974171');
         </script>
-      </Head>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
         <Analytics />

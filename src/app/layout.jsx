@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Analytics } from "@vercel/analytics/react"
-
+import Script from 'next/script'
 
 
 const geistSans = Geist({
@@ -24,9 +24,12 @@ export default function RootLayout({ children }) {
  
   return (
     <html lang="pt-BR">
-      <head>
-
-      </head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16829974171" ></Script>
+      <Script>
+        {
+          `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16829974171');`
+        }
+      </Script>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
         <Analytics />
